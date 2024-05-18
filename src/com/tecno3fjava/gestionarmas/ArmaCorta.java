@@ -1,4 +1,4 @@
-package gestion.armas.policia3f;
+package com.tecno3fjava.gestionarmas;
 
 class ArmaCorta extends Arma {
     private boolean esAutomatica;

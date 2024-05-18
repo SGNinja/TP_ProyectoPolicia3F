@@ -1,4 +1,4 @@
-package gestion.armas.policia3f;
+package com.tecno3fjava.gestionarmas;
 
 abstract class Arma {
     private Policia policia;

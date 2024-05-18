@@ -20,9 +20,9 @@ Este programa permite a la policía de Tres de Febrero administrar las armas asi
 
 ```
 ├── src
-│   └── gestion
-│       └── armas
-│           └── policia3f
+│   └── com
+│       └── tecno3fjava
+│           └── gestionarmas
 │               ├── Arma.java
 │               ├── ArmaCorta.java
 │               ├── ArmaLarga.java
@@ -32,19 +32,19 @@ Este programa permite a la policía de Tres de Febrero administrar las armas asi
 └── README.md
 ```
 
-- `gestion.armas.policia3f.Arma.java`: Clase abstracta que representa un arma genérica y contiene los atributos y métodos comunes a todas las armas.
-- `gestion.armas.policia3f.ArmaCorta.java`: Clase que extiende de `Arma` y representa un arma corta, con su atributo y método específico.
-- `gestion.armas.policia3f.ArmaLarga.java`: Clase que extiende de `Arma` y representa un arma larga, con sus atributos y método específicos.
-- `gestion.armas.policia3f.GestionArmas.java`: Clase que contiene los métodos estáticos para registrar policías, registrar armas, mostrar información y utilizar las funcionalidades de las armas.
-- `gestion.armas.policia3f.Main.java`: Clase principal que contiene el método `main()` y el menú de opciones para interactuar con el programa.
-- `gestion.armas.policia3f.Policia.java`: Clase que representa a un policía y contiene sus atributos.
+- `com.tecno3fjava.gestionarmas.Arma.java`: Clase abstracta que representa un arma genérica y contiene los atributos y métodos comunes a todas las armas.
+- `com.tecno3fjava.gestionarmas.ArmaCorta.java`: Clase que extiende de `Arma` y representa un arma corta, con su atributo y método específico.
+- `com.tecno3fjava.gestionarmas.ArmaLarga.java`: Clase que extiende de `Arma` y representa un arma larga, con sus atributos y método específicos.
+- `com.tecno3fjava.gestionarmas.GestionArmas.java`: Clase que contiene los métodos estáticos para registrar policías, registrar armas, mostrar información y utilizar las funcionalidades de las armas.
+- `com.tecno3fjava.gestionarmas.Main.java`: Clase principal que contiene el método `main()` y el menú de opciones para interactuar con el programa.
+- `com.tecno3fjava.gestionarmas.Policia.java`: Clase que representa a un policía y contiene sus atributos.
 - `README.md`: Este archivo, que proporciona información sobre el programa.
 
 ## Instrucciones de uso
 
 1. Clona o descarga el proyecto en tu máquina local.
 2. Abre el proyecto en tu IDE preferido.
-3. Compila y ejecuta la clase `gestion.armas.policia3f.Main`.
+3. Compila y ejecuta la clase `com.tecno3fjava.gestionarmas.Main`.
 4. Sigue las instrucciones del menú para interactuar con el programa.
 
 ## Ejemplos de uso

@@ -1,4 +1,4 @@
-package gestion.armas.policia3f;
+package com.tecno3fjava.gestionarmas;
 import java.util.ArrayList;
 import java.util.Scanner;
 

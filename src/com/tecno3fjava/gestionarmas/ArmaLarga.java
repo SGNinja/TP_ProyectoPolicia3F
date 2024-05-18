@@ -1,4 +1,4 @@
-package gestion.armas.policia3f;
+package com.tecno3fjava.gestionarmas;
 
 class ArmaLarga extends Arma implements Comparable<ArmaLarga> {
     private boolean tieneRenar;
