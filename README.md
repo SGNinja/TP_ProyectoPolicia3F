@@ -13,7 +13,7 @@ Este programa permite a la policía de Tres de Febrero administrar las armas asi
 
 ## Requisitos
 
-- Java 8 o superior
+- Java 17 o superior
 - IntelliJ IDEA o cualquier otro IDE compatible con Java
 
 ## Estructura del proyecto
