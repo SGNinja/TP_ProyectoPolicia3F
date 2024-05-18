@@ -11,7 +11,7 @@ public class GestionArmas {
         String apellido = scanner.nextLine();
         System.out.print("Ingrese el legajo del policía: ");
         int legajo = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        scanner.nextLine(); 
         Policia policia = new Policia(nombre, apellido, legajo);
         policias.add(policia);
         System.out.println("Policía registrado correctamente.");
@@ -28,44 +28,44 @@ public class GestionArmas {
 
         System.out.print("Ingrese la cantidad de municiones: ");
         int cantidadMuniciones = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        scanner.nextLine(); 
 
         System.out.print("Ingrese el alcance en metros: ");
         double alcanceMetros = scanner.nextDouble();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        scanner.nextLine(); 
 
         System.out.print("Ingrese la marca: ");
         String marca = scanner.nextLine();
 
         System.out.print("Ingrese el calibre: ");
         int calibre = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        scanner.nextLine(); 
 
         System.out.print("Ingrese el estado (NUEVA, EN MANTENIMIENTO, EN USO): ");
         String estado = scanner.nextLine();
 
         System.out.print("¿Es un arma corta (1) o larga (2)? ");
         int tipoArma = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        scanner.nextLine(); 
 
         if (tipoArma == 1) {
             System.out.print("¿Es automática? (true/false): ");
             boolean esAutomatica = scanner.nextBoolean();
-            scanner.nextLine(); // Consumir el salto de línea pendiente
+            scanner.nextLine(); 
             ArmaCorta armaCorta = new ArmaCorta(policia, cantidadMuniciones, alcanceMetros, marca, calibre, estado, esAutomatica);
             armas.add(armaCorta);
             System.out.println("Arma corta registrada correctamente.");
         } else if (tipoArma == 2) {
             System.out.print("¿Tiene sello RENAR? (true/false): ");
             boolean tieneRenar = scanner.nextBoolean();
-            scanner.nextLine(); // Consumir el salto de línea pendiente
+            scanner.nextLine(); 
 
             System.out.print("Ingrese la descripción de uso: ");
             String descripcionUso = scanner.nextLine();
 
             System.out.print("Ingrese el nivel (1-5): ");
             int nivel = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea pendiente
+            scanner.nextLine(); 
 
             ArmaLarga armaLarga = new ArmaLarga(policia, cantidadMuniciones, alcanceMetros, marca, calibre, estado, tieneRenar, descripcionUso, nivel);
             armas.add(armaLarga);
@@ -99,7 +99,7 @@ public class GestionArmas {
     public static void usarFuncionalidades(ArrayList<Arma> armas, Scanner scanner) {
         System.out.print("Ingrese el índice del arma (0, 1, 2, ...): ");
         int indiceArma = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        scanner.nextLine(); 
 
         if (indiceArma >= 0 && indiceArma < armas.size()) {
             Arma arma = armas.get(indiceArma);
@@ -115,7 +115,7 @@ public class GestionArmas {
 
                 System.out.print("Ingrese el índice de otra arma larga para compararlas: ");
                 int indiceOtraArma = scanner.nextInt();
-                scanner.nextLine(); // Consumir el salto de línea pendiente
+                scanner.nextLine(); 
 
                 if (indiceOtraArma >= 0 && indiceOtraArma < armas.size()) {
                     Arma otraArma = armas.get(indiceOtraArma);
